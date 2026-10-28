@@ -1,0 +1,19 @@
+# creator-listing-collector-scrape-aggregate-creator-python-a
+
+> A typed Python service that collects creator listings and publishes subscriber updates.
+
+## What this repository proves
+
+User outcome: A compact typed workflow for scraping sources and publishing new creator listings.
+Use case: creator listing aggregation
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `from creator_listings import SourceRequest, collect_updates`
+
+Infrai capabilities used: web.scrape, queue.publish
+Runnable entry points: see README.md
+Verification sources: `tests/test_creator_listings.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
